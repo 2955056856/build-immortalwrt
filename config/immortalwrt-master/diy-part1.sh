@@ -8,7 +8,12 @@
 
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-
+sed -i '$a src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' feeds.conf.default
+sed -i '$a src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' feeds.conf.default
+sed -i '$a src-git nas https://github.com/linkease/nas-packages.git;master' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' feeds.conf.default
+sed -i '$a src-git istore https://github.com/linkease/istore.git' feeds.conf.default
+sed -i '$a src-git 5gmodem https://github.com/qianlyun123/5G-Modem-Support.git' feeds.conf.default
 # other
 # rm -rf package/emortal/{autosamba,ipv6-helper}
 
